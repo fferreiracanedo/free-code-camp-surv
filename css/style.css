@@ -1,7 +1,14 @@
 body {
-  background-color: #5390d9;
-  max-width: 100%;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+
+  opacity: 0.9;
   font-family: 'Lato', sans-serif;
+  background-position: fixed;
 }
 
 header {
@@ -11,28 +18,34 @@ header {
   padding: 15px;
 }
 
+h1,
+p {
+  text-align: center;
+  margin: auto;
+}
+
 .header_title {
-  max-width: 700px;
+  max-width: 0 auto;
   margin-left: -60px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 900;
   color: white;
   text-align: center;
 }
 
 .subtitle_form {
-  max-width: 700px;
+  max-width: 0 auto;
   margin-left: -60px;
   font-size: 20px;
-  margin: 20px;
-  text-align: center;
-  font-weight: thin;
+  margin: 9px;
+
+  font-weight: 300;
   color: white;
 }
 
 .principal_bar {
-  background-color: seashell;
-  border: 1px solid red;
+  border-radius: 10px;
+  background-color: #262646;
   text-align: center;
   margin: 0 auto;
   max-width: 900px;
@@ -46,17 +59,41 @@ form {
 }
 
 label {
-  width: 100px;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  font-size: bold;
+  width: 570px;
   display: inline-block;
+  margin: 4px;
+  padding: 8px;
 }
 
 input {
   border-radius: 4px;
-  width: calc(100% - 115px);
+  width: calc(100% - 81px);
   display: inline-block;
+  padding: 17px;
 }
 
 .form_in {
   font-size: 25px;
   text-align: left;
+}
+
+select {
+  display: inline-block;
+  width: 675px;
+  margin: -10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.role_select {
+  margin: 9px auto;
+  padding: 10px;
+}
+::placeholder {
+  font-size: 20px;
+  font-weight: 200;
 }
